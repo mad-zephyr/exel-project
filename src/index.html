@@ -1,15 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-    <title>Pure JavaScript Exel Project</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <title>Pure JavaScript Exel Project</title>
 </head>
+
 <body>
-    
-    <div id="app" class="container">GG@@@GG</div>
+
+  <div id="app" class="container">
+    <div class="exel">
+      <div class="exel__header">
+        <input type="text" class="input" value="Новая таблица">
+
+        <div>
+          <div class="button">
+            <span class="material-icons"> exit_to_app </span>
+          </div>
+          <div class="button">
+            <span class="material-icons"> delete_outline </span>
+          </div>
+        </div>
+
+      </div>
+      <div class="exel__toolbar">
+        <div class="button">
+          <span class="material-icons"> format_align_left </span>
+        </div>
+        <div class="button">
+          <span class="material-icons"> format_align_center </span>
+        </div>
+        <div class="button">
+          <span class="material-icons"> format_align_right </span>
+        </div>
+        <div class="button">
+          <span class="material-icons"> format_bold </span>
+        </div>
+        <div class="button">
+          <span class="material-icons"> format_italic </span>
+        </div>
+        <div class="button">
+          <span class="material-icons"> format_underline </span>
+        </div>
+
+      </div>
+      <div class="exel__formula">
+        <div class="info">Fx</div>
+        <div class="input" contenteditable="true">Внесите вашу формулу</div>
+
+      </div>
+      <div class="exel__table"></div>
+    </div>
+  </div>
 
 </body>
+
 </html>

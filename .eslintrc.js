@@ -14,5 +14,6 @@ module.exports = {
   rules: {
     'semi': 'off',
     'comma-dangle': 'off',
+    // 'max-len': 100
   }
-}
+} 

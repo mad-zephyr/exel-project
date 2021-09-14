@@ -1,0 +1,39 @@
+@import "variables"
+@import "mixins"
+
+.exel__header
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	display: flex
+	justify-content: space-between
+	align-items: center
+	height: $header-height
+	padding: 8px 4px 
+	background: #f7f4d9
+
+	.input
+		margin: 0
+		padding: 2px 7px
+		color: #000
+		height: 30px
+		min-width: 2px
+		border: 2px solid #00000000
+		border-radius: 2px
+		height: 20px
+		font-size: 16px
+		line-height: 22px
+		outline: none
+		transition: 0.3s all ease
+
+		&:hover
+			border: 2px solid $border-color
+		&:focus
+			border: 2px solid #575757
+		
+	.button
+		@include button(red)
+ 
+	
+        
