@@ -3,3 +3,54 @@
 
 
 .exel__table
+  position: absolute
+  top: $header-height + $toolbar-height + $formula-height
+  left: 0
+  right: 0
+  overflow-x: auto
+  padding-bottom: 2px
+
+  .row
+    display: flex
+    min-height: 20px
+    height: $row-height
+    .column
+      display: flex
+      justify-content: center
+      align-items: center
+      background: #f8f9fa
+      min-width: 40px
+      width: $cell-width
+      height: 100%
+      border: 1px solid $border-color
+      border-top: none
+      border-left: none
+    &-info
+      display: flex
+      justify-content: center
+      align-items: center
+      min-width: $info-cell-width
+      height: 100%    
+      border: 1px solid $border-color
+      border-top: none
+      background: #f8f9fa
+    &-data 
+      display: flex  
+    .cell
+      min-width: 40px
+      padding: 5px
+      width: $cell-width
+      border: 1px solid $border-color
+      border-top: none
+      border-left: none
+      color: #111
+      word-spacing: none
+      outline: none
+      &:focus
+        border: none
+        outline: 2px solid #5eb6ff
+        z-index: 2
+      // &.selected
+      //   border: none
+      //   outline: 2px solid #5eb6ff
+      //   z-index: 2
